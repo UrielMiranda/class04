@@ -1,0 +1,81 @@
+@gradientColor: rgb(177, 111, 166);
+@linearGradient: linear-gradient(
+  90deg,
+  rgba(177, 111, 166, 1) 0%,
+  rgba(139, 177, 224, 1) 100%
+);
+@white: #ffff;
+@logo: "http://pluspng.com/img-png/spotify-vector-png-spotify-clipart-png-3344.png";
+@purple: #3c54b8;
+body {
+  h1,
+  h2 {
+    margin: 0px;
+  }
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  background: @gradientColor;
+  background: @linearGradient;
+  color: @white;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 40px;
+    &__nav {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      &__items {
+        list-style: none;
+        display: flex;
+        li {
+          margin: 10px 20px;
+          a {
+            color: @white;
+            font-weight: 700;
+            font-size: 16px;
+
+            &:visited {
+              text-decoration: none;
+            }
+            &:link {
+              text-decoration: none;
+            }
+            &:hover {
+              color: @purple;
+            }
+          }
+        }
+        &__separator {
+          margin: 10px;
+          height: 20px;
+          border: 1px solid #fff;
+        }
+      }
+    }
+    &__logo {
+      width: 50%;
+      &__img {
+        width: 50%;
+        height: 50%;
+        margin: 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(@logo);
+      }
+    }
+  }
+  .display {
+    padding: 50px;
+    &__premium {
+      margin: 0px 40px;
+      width: 31%;
+      &__quote {
+        font-size: 80px;
+      }
+      &__bullet {
+        font-size: 12px;
+        font-weight: 700;
+      }
+    }
+  }
+}
