@@ -27,8 +27,9 @@ body {
       &__items {
         list-style: none;
         display: flex;
+        align-items: center;
         li {
-          margin: 10px 20px;
+          margin: 0px 20px;
           a {
             color: @white;
             font-weight: 700;
@@ -50,6 +51,19 @@ body {
           height: 20px;
           border: 1px solid #fff;
         }
+        &__about{
+          height: 100%;
+          display: flex;
+          align-items: center;
+          img{
+            width: 40px;
+            border-radius: 50px;
+            margin-right: 20px;
+            -webkit-box-shadow: 2px 4px 108px -13px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 2px 4px 108px -13px rgba(0, 0, 0, 0.75);
+            box-shadow: 2px 4px 108px -13px rgba(0, 0, 0, 0.75);
+          }
+        }
       }
     }
     &__logo {
@@ -66,9 +80,10 @@ body {
   }
   .display {
     padding: 50px;
+    display: flex;
     &__premium {
       margin: 0px 40px;
-      width: 31%;
+      width: 30%;
       &__quote {
         font-size: 80px;
       }
@@ -76,6 +91,12 @@ body {
         font-size: 12px;
         font-weight: 700;
       }
+    }
+  }
+  .grid {
+    width: 70%;
+    &__container {
+      display: flex;
     }
   }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button";
 import "./Premium.module.less";
 
-const Premium = () => {
+const Premium = (props) => {
   return (
     <section className="premium__wrapper">
       <div className="premium__wrapper__btn">

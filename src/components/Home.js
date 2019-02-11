@@ -1,7 +1,8 @@
 import React from "react";
 import Grid from "./Grid";
 import Button from "./Button";
-const Home = () => {
+
+const Home = props => {
   return (
     <section className="display">
       <div className="display__premium">
@@ -13,10 +14,16 @@ const Home = () => {
           Sigue disfrutando de la música que estabas escuchando justo donde la
           dejaste
         </h2>
-        <Button data="Abrir Reproductor Web"/>
-
+        <Button data="Abrir Reproductor Web" />
       </div>
-      <Grid />
+      <div className="grid">
+          <div className="grid__container">
+              <Grid start={0} limit={2} />
+          </div>
+          <div className="grid__container">
+              <Grid start={3} limit={6} />
+          </div>
+      </div>
     </section>
   );
 };
